@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version          = "1.0"
   s.summary          = "Awesome sound manager singleton for Objective C"
   s.description      = <<-DESC
-                       AMGSoundManager makes it simple the control of multiple sounds, loop sounds, change volume while playing, etc. All you need to do with sounds, can be done with AMGSoundManager with only one line of code.
+AMGSoundManager makes it simple the control of multiple sounds, loop sounds, change volume while playing, etc. All you need to do with sounds, can be done with AMGSoundManager with only one line of code.
                        DESC
   s.homepage         = "https://github.com/AlbertMontserrat/AMGSoundManager"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
