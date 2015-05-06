@@ -51,7 +51,7 @@
 @protocol AMGSoundManagerDelegate <NSObject>
 
 @optional
--(void)audioDidFinish:(NSString *)audio inLine:(NSString *)line;
--(void)audioErrorOcurred:(NSString *)audio inLine:(NSString *)line;
+-(void)audioDidFinish:(NSString *)name inLine:(NSString *)line;
+-(void)audioErrorOcurred:(NSString *)name inLine:(NSString *)line;
 
 @end

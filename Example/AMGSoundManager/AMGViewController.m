@@ -48,12 +48,12 @@
 
 
 //Use this to play a sequense of different audios
--(void)audioDidFinish:(NSString *)audio inLine:(NSString *)line{
-    NSLog(@"Audio %@ did finish in line %@",audio,line);
+-(void)audioDidFinish:(NSString *)name inLine:(NSString *)line{
+    NSLog(@"Audio %@ did finish in line %@",name,line);
 }
 
--(void)audioErrorOcurred:(NSString *)audio inLine:(NSString *)line{
-    NSLog(@"Audio %@ did error in line %@",audio,line);
+-(void)audioErrorOcurred:(NSString *)name inLine:(NSString *)line{
+    NSLog(@"Audio %@ did error in line %@",name,line);
 }
 
 
