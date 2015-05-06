@@ -1,0 +1,14 @@
+PODS:
+  - AMGSoundManager (1.0)
+
+DEPENDENCIES:
+  - AMGSoundManager (from `../`)
+
+EXTERNAL SOURCES:
+  AMGSoundManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AMGSoundManager: a7c9f1d1a51db511dbd7890787f183be38b6de49
+
+COCOAPODS: 0.35.0

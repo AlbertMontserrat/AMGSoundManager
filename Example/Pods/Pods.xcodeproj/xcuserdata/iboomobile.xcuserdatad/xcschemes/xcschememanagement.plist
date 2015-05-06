@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AMGSoundManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AMGSoundManager-AMGSoundManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AMGSoundManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Tests-AMGSoundManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3C3F9801B501E12CE32D9D12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75EF6DD99951AC28D56B3D03</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EDF7F0DD26CDA1A651D9CDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E02E0D81E01B16ABBF7E507A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA49ACCC6079128F2AB808DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

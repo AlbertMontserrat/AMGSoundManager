@@ -1,0 +1,1 @@
+PODS_AMGSOUNDMANAGER_AMGSOUNDMANAGER_OTHER_LDFLAGS = -framework "AVFoundation" -framework "UIKit"
