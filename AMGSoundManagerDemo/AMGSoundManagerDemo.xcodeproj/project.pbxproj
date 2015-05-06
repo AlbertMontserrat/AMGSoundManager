@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		404CBD0C1AF90EB20074C902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CBD0B1AF90EB20074C902 /* main.m */; };
+		404CBD0F1AF90EB20074C902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CBD0E1AF90EB20074C902 /* AppDelegate.m */; };
+		404CBD121AF90EB20074C902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CBD111AF90EB20074C902 /* ViewController.m */; };
+		404CBD151AF90EB20074C902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404CBD131AF90EB20074C902 /* Main.storyboard */; };
+		404CBD171AF90EB20074C902 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404CBD161AF90EB20074C902 /* Images.xcassets */; };
+		404CBD1A1AF90EB20074C902 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 404CBD181AF90EB20074C902 /* LaunchScreen.xib */; };
+		404CBD261AF90EB20074C902 /* AMGSoundManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CBD251AF90EB20074C902 /* AMGSoundManagerDemoTests.m */; };
+		404CBD311AF90ED60074C902 /* AMGSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CBD301AF90ED60074C902 /* AMGSoundManager.m */; };
+		404CBD341AF90FA00074C902 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404CBD331AF90FA00074C902 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		404CBD201AF90EB20074C902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 404CBCFE1AF90EB20074C902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404CBD051AF90EB20074C902;
+			remoteInfo = AMGSoundManagerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		404CBD061AF90EB20074C902 /* AMGSoundManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMGSoundManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		404CBD0A1AF90EB20074C902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404CBD0B1AF90EB20074C902 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		404CBD0D1AF90EB20074C902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		404CBD0E1AF90EB20074C902 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		404CBD101AF90EB20074C902 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		404CBD111AF90EB20074C902 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		404CBD141AF90EB20074C902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		404CBD161AF90EB20074C902 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		404CBD191AF90EB20074C902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		404CBD1F1AF90EB20074C902 /* AMGSoundManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMGSoundManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		404CBD241AF90EB20074C902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404CBD251AF90EB20074C902 /* AMGSoundManagerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AMGSoundManagerDemoTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		404CBD2F1AF90ED60074C902 /* AMGSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AMGSoundManager.h; path = ../../AMGSoundManager/AMGSoundManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		404CBD301AF90ED60074C902 /* AMGSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AMGSoundManager.m; path = ../../AMGSoundManager/AMGSoundManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		404CBD331AF90FA00074C902 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		404CBD031AF90EB20074C902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404CBD341AF90FA00074C902 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404CBD1C1AF90EB20074C902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		404CBCFD1AF90EB20074C902 = {
+			isa = PBXGroup;
+			children = (
+				404CBD331AF90FA00074C902 /* AVFoundation.framework */,
+				404CBD081AF90EB20074C902 /* AMGSoundManagerDemo */,
+				404CBD221AF90EB20074C902 /* AMGSoundManagerDemoTests */,
+				404CBD071AF90EB20074C902 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		404CBD071AF90EB20074C902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				404CBD061AF90EB20074C902 /* AMGSoundManagerDemo.app */,
+				404CBD1F1AF90EB20074C902 /* AMGSoundManagerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		404CBD081AF90EB20074C902 /* AMGSoundManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				404CBD321AF90ED90074C902 /* AMGSoundManager */,
+				404CBD0D1AF90EB20074C902 /* AppDelegate.h */,
+				404CBD0E1AF90EB20074C902 /* AppDelegate.m */,
+				404CBD101AF90EB20074C902 /* ViewController.h */,
+				404CBD111AF90EB20074C902 /* ViewController.m */,
+				404CBD131AF90EB20074C902 /* Main.storyboard */,
+				404CBD161AF90EB20074C902 /* Images.xcassets */,
+				404CBD181AF90EB20074C902 /* LaunchScreen.xib */,
+				404CBD091AF90EB20074C902 /* Supporting Files */,
+			);
+			path = AMGSoundManagerDemo;
+			sourceTree = "<group>";
+		};
+		404CBD091AF90EB20074C902 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				404CBD0A1AF90EB20074C902 /* Info.plist */,
+				404CBD0B1AF90EB20074C902 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		404CBD221AF90EB20074C902 /* AMGSoundManagerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				404CBD251AF90EB20074C902 /* AMGSoundManagerDemoTests.m */,
+				404CBD231AF90EB20074C902 /* Supporting Files */,
+			);
+			path = AMGSoundManagerDemoTests;
+			sourceTree = "<group>";
+		};
+		404CBD231AF90EB20074C902 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				404CBD241AF90EB20074C902 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		404CBD321AF90ED90074C902 /* AMGSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				404CBD2F1AF90ED60074C902 /* AMGSoundManager.h */,
+				404CBD301AF90ED60074C902 /* AMGSoundManager.m */,
+			);
+			name = AMGSoundManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		404CBD051AF90EB20074C902 /* AMGSoundManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404CBD291AF90EB20074C902 /* Build configuration list for PBXNativeTarget "AMGSoundManagerDemo" */;
+			buildPhases = (
+				404CBD021AF90EB20074C902 /* Sources */,
+				404CBD031AF90EB20074C902 /* Frameworks */,
+				404CBD041AF90EB20074C902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMGSoundManagerDemo;
+			productName = AMGSoundManagerDemo;
+			productReference = 404CBD061AF90EB20074C902 /* AMGSoundManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		404CBD1E1AF90EB20074C902 /* AMGSoundManagerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404CBD2C1AF90EB20074C902 /* Build configuration list for PBXNativeTarget "AMGSoundManagerDemoTests" */;
+			buildPhases = (
+				404CBD1B1AF90EB20074C902 /* Sources */,
+				404CBD1C1AF90EB20074C902 /* Frameworks */,
+				404CBD1D1AF90EB20074C902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				404CBD211AF90EB20074C902 /* PBXTargetDependency */,
+			);
+			name = AMGSoundManagerDemoTests;
+			productName = AMGSoundManagerDemoTests;
+			productReference = 404CBD1F1AF90EB20074C902 /* AMGSoundManagerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		404CBCFE1AF90EB20074C902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Albert Montserrat";
+				TargetAttributes = {
+					404CBD051AF90EB20074C902 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					404CBD1E1AF90EB20074C902 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 404CBD051AF90EB20074C902;
+					};
+				};
+			};
+			buildConfigurationList = 404CBD011AF90EB20074C902 /* Build configuration list for PBXProject "AMGSoundManagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 404CBCFD1AF90EB20074C902;
+			productRefGroup = 404CBD071AF90EB20074C902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				404CBD051AF90EB20074C902 /* AMGSoundManagerDemo */,
+				404CBD1E1AF90EB20074C902 /* AMGSoundManagerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		404CBD041AF90EB20074C902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404CBD151AF90EB20074C902 /* Main.storyboard in Resources */,
+				404CBD1A1AF90EB20074C902 /* LaunchScreen.xib in Resources */,
+				404CBD171AF90EB20074C902 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404CBD1D1AF90EB20074C902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		404CBD021AF90EB20074C902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404CBD121AF90EB20074C902 /* ViewController.m in Sources */,
+				404CBD311AF90ED60074C902 /* AMGSoundManager.m in Sources */,
+				404CBD0F1AF90EB20074C902 /* AppDelegate.m in Sources */,
+				404CBD0C1AF90EB20074C902 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404CBD1B1AF90EB20074C902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404CBD261AF90EB20074C902 /* AMGSoundManagerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		404CBD211AF90EB20074C902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404CBD051AF90EB20074C902 /* AMGSoundManagerDemo */;
+			targetProxy = 404CBD201AF90EB20074C902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		404CBD131AF90EB20074C902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				404CBD141AF90EB20074C902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		404CBD181AF90EB20074C902 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				404CBD191AF90EB20074C902 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		404CBD271AF90EB20074C902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		404CBD281AF90EB20074C902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		404CBD2A1AF90EB20074C902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AMGSoundManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		404CBD2B1AF90EB20074C902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AMGSoundManagerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		404CBD2D1AF90EB20074C902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AMGSoundManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMGSoundManagerDemo.app/AMGSoundManagerDemo";
+			};
+			name = Debug;
+		};
+		404CBD2E1AF90EB20074C902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AMGSoundManagerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMGSoundManagerDemo.app/AMGSoundManagerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		404CBD011AF90EB20074C902 /* Build configuration list for PBXProject "AMGSoundManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404CBD271AF90EB20074C902 /* Debug */,
+				404CBD281AF90EB20074C902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404CBD291AF90EB20074C902 /* Build configuration list for PBXNativeTarget "AMGSoundManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404CBD2A1AF90EB20074C902 /* Debug */,
+				404CBD2B1AF90EB20074C902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		404CBD2C1AF90EB20074C902 /* Build configuration list for PBXNativeTarget "AMGSoundManagerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404CBD2D1AF90EB20074C902 /* Debug */,
+				404CBD2E1AF90EB20074C902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 404CBCFE1AF90EB20074C902 /* Project object */;
+}
