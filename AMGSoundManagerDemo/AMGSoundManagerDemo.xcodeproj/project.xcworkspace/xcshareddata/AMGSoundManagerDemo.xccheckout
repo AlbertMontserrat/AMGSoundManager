@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9CC946AF-A2AE-48FD-AF2B-4388CAC05052</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>AMGSoundManagerDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DDD4A1052A0F75C1950AB343AF95CEAB0AD21DCC</key>
 		<string>https://github.com/AlbertMontserrat/AMGSoundManager.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AMGSoundManagerDemo/AMGSoundManagerDemo.xcodeproj/project.xcworkspace</string>
+	<string>AMGSoundManagerDemo/AMGSoundManagerDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DDD4A1052A0F75C1950AB343AF95CEAB0AD21DCC</key>

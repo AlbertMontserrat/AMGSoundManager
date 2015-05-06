@@ -16,6 +16,9 @@
 		404CBD261AF90EB20074C902 /* AMGSoundManagerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CBD251AF90EB20074C902 /* AMGSoundManagerDemoTests.m */; };
 		404CBD311AF90ED60074C902 /* AMGSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 404CBD301AF90ED60074C902 /* AMGSoundManager.m */; };
 		404CBD341AF90FA00074C902 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 404CBD331AF90FA00074C902 /* AVFoundation.framework */; };
+		40FF23A41AF9E8A9002540E7 /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40FF23A31AF9E8A9002540E7 /* background_music.mp3 */; };
+		40FF23A71AF9E8F9002540E7 /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40FF23A61AF9E8F9002540E7 /* sound1.mp3 */; };
+		40FF23A91AF9E90E002540E7 /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40FF23A81AF9E90E002540E7 /* sound2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		404CBD2F1AF90ED60074C902 /* AMGSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AMGSoundManager.h; path = ../../AMGSoundManager/AMGSoundManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		404CBD301AF90ED60074C902 /* AMGSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AMGSoundManager.m; path = ../../AMGSoundManager/AMGSoundManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		404CBD331AF90FA00074C902 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		40FF23A31AF9E8A9002540E7 /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background_music.mp3; sourceTree = "<group>"; };
+		40FF23A61AF9E8F9002540E7 /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound1.mp3; sourceTree = "<group>"; };
+		40FF23A81AF9E90E002540E7 /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 				404CBD131AF90EB20074C902 /* Main.storyboard */,
 				404CBD161AF90EB20074C902 /* Images.xcassets */,
 				404CBD181AF90EB20074C902 /* LaunchScreen.xib */,
+				40FF23A51AF9E8C0002540E7 /* Resources */,
 				404CBD091AF90EB20074C902 /* Supporting Files */,
 			);
 			path = AMGSoundManagerDemo;
@@ -134,6 +141,16 @@
 				404CBD301AF90ED60074C902 /* AMGSoundManager.m */,
 			);
 			name = AMGSoundManager;
+			sourceTree = "<group>";
+		};
+		40FF23A51AF9E8C0002540E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40FF23A31AF9E8A9002540E7 /* background_music.mp3 */,
+				40FF23A61AF9E8F9002540E7 /* sound1.mp3 */,
+				40FF23A81AF9E90E002540E7 /* sound2.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +235,10 @@
 			files = (
 				404CBD151AF90EB20074C902 /* Main.storyboard in Resources */,
 				404CBD1A1AF90EB20074C902 /* LaunchScreen.xib in Resources */,
+				40FF23A71AF9E8F9002540E7 /* sound1.mp3 in Resources */,
 				404CBD171AF90EB20074C902 /* Images.xcassets in Resources */,
+				40FF23A41AF9E8A9002540E7 /* background_music.mp3 in Resources */,
+				40FF23A91AF9E90E002540E7 /* sound2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +456,7 @@
 				404CBD2B1AF90EB20074C902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		404CBD2C1AF90EB20074C902 /* Build configuration list for PBXNativeTarget "AMGSoundManagerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +465,7 @@
 				404CBD2E1AF90EB20074C902 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
