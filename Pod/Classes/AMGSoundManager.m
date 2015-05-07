@@ -1,9 +1,9 @@
 //
 //  EfectosSound.m
-//  benito
+//  AMGSoundManager
 //
-//  Created by iBoo Mobile on 09/05/13.
-//  Copyright (c) 2013 iBoo Mobile. All rights reserved.
+//  Created by Albert Montserrat on 09/05/13.
+//  Copyright (c) 2013 Albert Montserrat. All rights reserved.
 //
 
 #import "AMGSoundManager.h"
