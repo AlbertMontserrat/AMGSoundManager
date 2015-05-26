@@ -85,6 +85,29 @@ With this, you can make a sequence of audios.
 -(void)audioErrorOcurred:(NSString *)name inLine:(NSString *)line;
 ```
 
+There's also an other way to know when an audio has ended using notifications:
+
+```
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(soundEndedNotification:) name:kSoundManagerAudioEnded object:nil];
+```
+
+And then:
+
+```
+-(void)soundEndedNotification:(NSNotification *)notification{
+
+    NSDictionary *info = notification.userInfo;
+    NSString *line = [info objectForKey:@"line"];
+    NSDictionary *audio = [info objectForKey:@"info"];
+    NSString *name = [audio objectForKey:@"name"];
+
+    if([name isEqualToString:@"my_audio_name"]){
+        //Do whatever
+    }
+
+}
+```
+
 ## Examples
 
 Run a background sound:

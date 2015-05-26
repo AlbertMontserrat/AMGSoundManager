@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AVFoundation/AVAudioPlayer.h"
 
+#define kSoundManagerAudioEnded @"SoundManagerAudioEnded"
 
 #define kAMGSoundManagerDefaultLine @"default"
 
@@ -31,6 +32,13 @@
 -(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line;
 -(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum;
 -(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount;
+
+-(BOOL)playAudioWithData:(NSData *)data;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount;
+
 -(void)stopAllAudios;
 -(void)stopAllAudiosForLine:(NSString *)line;
 -(void)stopAllAudiosWithoutLine;

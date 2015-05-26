@@ -72,6 +72,52 @@ static AMGSoundManager *_sharedManager;
     return YES;
 }
 
+-(BOOL)playAudioWithData:(NSData *)data{
+    return [self playAudioWithData:data withName:nil inLine:@"default" withVolum:1.0 andRepeatCount:0];
+}
+
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name{
+    return [self playAudioWithData:data withName:name inLine:@"default" withVolum:1.0 andRepeatCount:0];
+}
+
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line{
+    return [self playAudioWithData:data withName:name inLine:line withVolum:1.0 andRepeatCount:0];
+}
+
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum{
+    return [self playAudioWithData:data withName:name inLine:line withVolum:volum andRepeatCount:0];
+}
+
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount{
+    if(!data || data.length == 0)
+        return NO;
+    if(!line)
+        line = @"default";
+    
+    if(![self.sounds objectForKey:line]){
+        [self.sounds setObject:[NSArray array] forKey:line];
+    }
+    
+    NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:line]];
+    
+    AVAudioPlayer *music=[[AVAudioPlayer alloc] initWithData:data error:nil];
+    music.volume = volum;
+    music.delegate = self;
+    music.numberOfLoops = repeatCount;
+    [music play];
+    
+    if(!music)
+        return NO;
+    
+    NSDictionary *dictSound = @{kAMGSoundManagerKeyName:name?:@"data",
+                                kAMGSoundManagerKeyPath:@"data",
+                                kAMGSoundManagerKeyPlayer:music};
+    [mut addObject:dictSound];
+    [self.sounds setObject:mut forKey:line];
+    
+    return YES;
+}
+
 -(void)stopAllAudios{
     [self stopAudiosInLine:nil andAlsoWithName:nil andAlsoWithPath:nil];
 }
@@ -140,6 +186,8 @@ static AMGSoundManager *_sharedManager;
                     [self.delegate audioDidFinish:audio inLine:key];
                 }
                 
+                [[NSNotificationCenter defaultCenter] postNotificationName:kSoundManagerAudioEnded object:self userInfo:@{@"info":dict,@"line":key}];
+                
             }
         }
     }
@@ -161,11 +209,12 @@ static AMGSoundManager *_sharedManager;
                     [self.delegate audioErrorOcurred:audio inLine:key];
                 }
                 
+                [[NSNotificationCenter defaultCenter] postNotificationName:kSoundManagerAudioEnded object:self userInfo:@{@"info":dict,@"line":key}];
+                
             }
         }
     }
 }
-
 
 -(BOOL)isAudioPlayingInLine:(NSString *)line{
     return [self isAudioPlayingInLine:line withName:nil];
