@@ -35,17 +35,26 @@ To create the singleton just write:
 To play an audio, AMGSoundManager provides multiple options:
 
 ```
--(BOOL)playAudioAtPath:(NSString *)audioPath;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount;
+-(BOOL)playAudioAtPath:(NSString *)audioPath withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
 ```
 
-As you can see, you can simply play an audio with just it's path. But also you can specify a name, line, volume and repeat count. 
+As you can see, you can simply play an audio with just it's path. But also you can specify a name, line, volume and repeat count. Finally, if you want, you can specify a complete handler or leave it as nil. If you specify a handler, it will notify you when the audio is ended, and why (if it has been stopped or not9.
 If repeat count is -1, the audio makes a loop.
 
 The name is used to identify a single sound (or a group of sounds with the same file, or whatever you want) and the line is normally used to identify a kind of sounds such as sfx, voices, background sounds, etc. But it's up to you what name and line you want to put in every sound.
+
+You can also play an audio with a NSData.
+```
+-(BOOL)playAudioWithData:(NSData *)data withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler; 
+```
 
 Then, you can stop the audios with the following methods:
 

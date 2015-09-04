@@ -25,7 +25,9 @@
                                                 withName:@"ambient"
                                                   inLine:@"background"
                                                withVolum:volume_slider.value
-                                          andRepeatCount:-1];
+                                          andRepeatCount:-1 withCompletitionHandler:^(BOOL success, BOOL stopped) {
+                                              NSLog(@"Audio has ended!");
+                                          }];
     }
 }
 
@@ -38,11 +40,15 @@
 }
 
 -(IBAction)playSound1:(id)sender{
-    [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"sound1" ofType:@"mp3"] withName:@"sound1"];
+    [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"sound1" ofType:@"mp3"] withName:@"sound1" withCompletitionHandler:^(BOOL success, BOOL stopped) {
+        NSLog(@"Audio has ended!");
+    }];
 }
 
 -(IBAction)playSound2:(id)sender{
-    [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"sound2" ofType:@"mp3"] withName:@"sound2"];
+    [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"sound2" ofType:@"mp3"] withName:@"sound2" withCompletitionHandler:^(BOOL success, BOOL stopped) {
+        NSLog(@"Audio has ended!");
+    }];
 }
 
 
