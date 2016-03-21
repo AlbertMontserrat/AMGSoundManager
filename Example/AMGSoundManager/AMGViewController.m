@@ -21,32 +21,34 @@
 
 -(IBAction)playBackgroundMusic:(id)sender{
     if(![[AMGSoundManager sharedManager] isAudioPlayingInLine:@"background"]){
-        [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"background_music" ofType:@"mp3"]
-                                                withName:@"ambient"
-                                                  inLine:@"background"
-                                               withVolum:volume_slider.value
-                                          andRepeatCount:-1 withCompletitionHandler:^(BOOL success, BOOL stopped) {
-                                              NSLog(@"Audio has ended!");
-                                          }];
+        [[AMGSoundManager sharedManager] playAudio:[[NSBundle mainBundle] pathForResource:@"background_music" ofType:@"mp3"]
+                                          withName:@"ambient"
+                                            inLine:@"background"
+                                        withVolume:volume_slider.value
+                                    andRepeatCount:-1
+                                      fadeDuration:1.0
+                           withCompletitionHandler:^(BOOL success, BOOL stopped) {
+                               NSLog(@"Audio has ended!");
+                           }];
     }
 }
 
 -(IBAction)stopBackgroundMusic:(id)sender{
-    [[AMGSoundManager sharedManager] stopAllAudiosForLine:@"background"];
+    [[AMGSoundManager sharedManager] stopAllAudiosForLine:@"background" withFadeDuration:1.0];
 }
 
 -(IBAction)volumeSliderChanged:(id)sender{
-    [[AMGSoundManager sharedManager] setVolume:volume_slider.value forLine:@"background"];
+    [[AMGSoundManager sharedManager] setVolume:volume_slider.value forLine:@"background" withFadeDuration:2.0];
 }
 
 -(IBAction)playSound1:(id)sender{
-    [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"sound1" ofType:@"mp3"] withName:@"sound1" withCompletitionHandler:^(BOOL success, BOOL stopped) {
+    [[AMGSoundManager sharedManager] playAudio:[[NSBundle mainBundle] pathForResource:@"sound1" ofType:@"mp3"] withName:@"sound1" withCompletitionHandler:^(BOOL success, BOOL stopped) {
         NSLog(@"Audio has ended!");
     }];
 }
 
 -(IBAction)playSound2:(id)sender{
-    [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"sound2" ofType:@"mp3"] withName:@"sound2" withCompletitionHandler:^(BOOL success, BOOL stopped) {
+    [[AMGSoundManager sharedManager] playAudio:[[NSBundle mainBundle] pathForResource:@"sound2" ofType:@"mp3"] withName:@"sound2" withCompletitionHandler:^(BOOL success, BOOL stopped) {
         NSLog(@"Audio has ended!");
     }];
 }

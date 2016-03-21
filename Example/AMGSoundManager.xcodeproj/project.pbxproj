@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		035BB5E66806C175EF33B878 /* libPods-AMGSoundManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8F6E9B33C3B87B15E83F24 /* libPods-AMGSoundManager.a */; };
+		40D8EC561C9FF73D008D71E5 /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40D8EC551C9FF73D008D71E5 /* background_music.mp3 */; };
+		40D8EC601CA0081E008D71E5 /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40D8EC5E1CA0081E008D71E5 /* sound1.mp3 */; };
+		40D8EC611CA0081E008D71E5 /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40D8EC5F1CA0081E008D71E5 /* sound2.mp3 */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		01C5D7173A00DD2222C72B2C /* Pods-AMGSoundManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGSoundManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMGSoundManager/Pods-AMGSoundManager.release.xcconfig"; sourceTree = "<group>"; };
 		02C18EA9DE09FE8E9D41525E /* AMGSoundManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AMGSoundManager.podspec; path = ../AMGSoundManager.podspec; sourceTree = "<group>"; };
+		40D8EC551C9FF73D008D71E5 /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background_music.mp3; sourceTree = "<group>"; };
+		40D8EC5E1CA0081E008D71E5 /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound1.mp3; sourceTree = "<group>"; };
+		40D8EC5F1CA0081E008D71E5 /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
 		4B05335A4AB098F15ACFA95D /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AMGSoundManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMGSoundManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,6 +142,9 @@
 				6003F5A5195388D20070C39A /* AMGViewController.h */,
 				6003F5A6195388D20070C39A /* AMGViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				40D8EC551C9FF73D008D71E5 /* background_music.mp3 */,
+				40D8EC5E1CA0081E008D71E5 /* sound1.mp3 */,
+				40D8EC5F1CA0081E008D71E5 /* sound2.mp3 */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			path = AMGSoundManager;
@@ -274,8 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				40D8EC561C9FF73D008D71E5 /* background_music.mp3 in Resources */,
+				40D8EC601CA0081E008D71E5 /* sound1.mp3 in Resources */,
 				6003F5A1195388D20070C39A /* Main.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				40D8EC611CA0081E008D71E5 /* sound2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

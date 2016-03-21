@@ -7,6 +7,17 @@
 //
 
 #import "AMGSoundManager.h"
+#import "AMGAudioPlayer.h"
+
+#define kAMGVolumeChangesPerSecond 15
+
+#define kAMGSoundManagerKeyName @"name"
+#define kAMGSoundManagerKeyPath @"path"
+#define kAMGSoundManagerKeyPlayer @"player"
+#define kAMGSoundManagerKeyHandler @"handler"
+
+#define kAMGSoundManagerDefaultLine @"default"
+
 
 static AMGSoundManager *_sharedManager;
 
@@ -26,76 +37,42 @@ static AMGSoundManager *_sharedManager;
 
 
 
--(BOOL)playAudioAtPath:(NSString *)audioPath withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioAtPath:audioPath withName:nil inLine:kAMGSoundManagerDefaultLine withVolum:1.0 andRepeatCount:0 withCompletitionHandler:handler];
+-(BOOL)playAudio:(id)audioPathOrData withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
+    return [self playAudio:audioPathOrData withName:nil inLine:kAMGSoundManagerDefaultLine withVolume:1.0 andRepeatCount:0 fadeDuration:0.0 withCompletitionHandler:handler];
 }
 
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioAtPath:audioPath withName:name inLine:kAMGSoundManagerDefaultLine withVolum:1.0 andRepeatCount:0 withCompletitionHandler:handler];
+-(BOOL)playAudio:(id)audioPathOrData withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
+    return [self playAudio:audioPathOrData withName:name inLine:kAMGSoundManagerDefaultLine withVolume:1.0 andRepeatCount:0 fadeDuration:0.0 withCompletitionHandler:handler];
 }
 
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioAtPath:audioPath withName:name inLine:line withVolum:1.0 andRepeatCount:0 withCompletitionHandler:handler];
+-(BOOL)playAudio:(id)audioPathOrData withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
+    return [self playAudio:audioPathOrData withName:name inLine:line withVolume:1.0 andRepeatCount:0 fadeDuration:0.0 withCompletitionHandler:handler];
 }
 
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioAtPath:audioPath withName:name inLine:line withVolum:volum andRepeatCount:0 withCompletitionHandler:handler];
-}
-
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    if(!audioPath || [audioPath compare:@""]==NSOrderedSame)
+-(BOOL)playAudio:(id)audioPathOrData withName:(NSString *)name inLine:(NSString *)line withVolume:(float)volume andRepeatCount:(int)repeatCount fadeDuration:(CGFloat)fadeDuration withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
+    if(!audioPathOrData)
         return NO;
     if(!line)
         line = kAMGSoundManagerDefaultLine;
     
-    if(![self.sounds objectForKey:line]){
-        [self.sounds setObject:[NSArray array] forKey:line];
-    }
-    
-    NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:line]];
-    
-    AVAudioPlayer *music=[[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:audioPath] error:NULL];
-    music.volume = volum;
-    music.delegate = self;
-    music.numberOfLoops = repeatCount;
-    [music play];
-    
-    if(!music)
+    AMGAudioPlayer *music;
+    NSMutableDictionary *dictSound;
+    if([audioPathOrData isKindOfClass:[NSString class]]){
+        music = [[AMGAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:audioPathOrData] error:NULL];
+        
+        dictSound = [NSMutableDictionary dictionaryWithDictionary:@{kAMGSoundManagerKeyName:name?:audioPathOrData,
+                                                                                         kAMGSoundManagerKeyPath:audioPathOrData,
+                                                                                         kAMGSoundManagerKeyPlayer:music}];
+    }else if([audioPathOrData isKindOfClass:[NSData class]]){
+        music = [[AMGAudioPlayer alloc] initWithData:audioPathOrData error:nil];
+        
+        dictSound = [NSMutableDictionary dictionaryWithDictionary:@{kAMGSoundManagerKeyName:name?:@"data",
+                                                                                         kAMGSoundManagerKeyPath:@"data",
+                                                                                         kAMGSoundManagerKeyPlayer:music}];
+    }else{
+        NSLog(@"NSData or NSString path is required to play audio with AMGSoundManager");
         return NO;
-    
-    NSMutableDictionary *dictSound = [NSMutableDictionary dictionaryWithDictionary:@{kAMGSoundManagerKeyName:name?:audioPath,
-                                                                                     kAMGSoundManagerKeyPath:audioPath,
-                                                                                     kAMGSoundManagerKeyPlayer:music}];
-    if(handler!=nil){
-        [dictSound setObject:[handler copy] forKey:kAMGSoundManagerKeyHandler];
     }
-    [mut addObject:dictSound];
-    [self.sounds setObject:mut forKey:line];
-    
-    return YES;
-}
-
--(BOOL)playAudioWithData:(NSData *)data withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioWithData:data withName:nil inLine:@"default" withVolum:1.0 andRepeatCount:0 withCompletitionHandler:handler];
-}
-
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioWithData:data withName:name inLine:@"default" withVolum:1.0 andRepeatCount:0 withCompletitionHandler:handler];
-}
-
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioWithData:data withName:name inLine:line withVolum:1.0 andRepeatCount:0 withCompletitionHandler:handler];
-}
-
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    return [self playAudioWithData:data withName:name inLine:line withVolum:volum andRepeatCount:0 withCompletitionHandler:handler];
-}
-
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler{
-    if(!data || data.length == 0)
-        return NO;
-    if(!line)
-        line = @"default";
     
     if(![self.sounds objectForKey:line]){
         [self.sounds setObject:[NSArray array] forKey:line];
@@ -103,55 +80,55 @@ static AMGSoundManager *_sharedManager;
     
     NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:line]];
     
-    AVAudioPlayer *music=[[AVAudioPlayer alloc] initWithData:data error:nil];
-    music.volume = volum;
+    music.volume = ((fadeDuration == 0.0) ? volume : 0.0);
     music.delegate = self;
     music.numberOfLoops = repeatCount;
     [music play];
     
     if(!music)
         return NO;
-
-    NSMutableDictionary *dictSound = [NSMutableDictionary dictionaryWithDictionary:@{kAMGSoundManagerKeyName:name?:@"data",
-                                                                                     kAMGSoundManagerKeyPath:@"data",
-                                                                                     kAMGSoundManagerKeyPlayer:music}];
+    
     if(handler!=nil){
         [dictSound setObject:[handler copy] forKey:kAMGSoundManagerKeyHandler];
     }
     [mut addObject:dictSound];
     [self.sounds setObject:mut forKey:line];
     
+    if(fadeDuration != 0.0){
+        [music setVolume:volume withFadeDuration:fadeDuration];
+    }
+    
     return YES;
 }
 
--(void)stopAllAudios{
-    [self stopAudiosInLine:nil andAlsoWithName:nil andAlsoWithPath:nil];
+-(void)stopAllAudiosWithFadeDuration:(CGFloat)fadeDuration{
+    [self stopAudiosInLine:nil andAlsoWithName:nil andAlsoWithPath:nil withFadeDuration:fadeDuration];
 }
 
--(void)stopAllAudiosForLine:(NSString *)line{
-    [self stopAudiosInLine:line andAlsoWithName:nil andAlsoWithPath:nil];
+-(void)stopAllAudiosForLine:(NSString *)line withFadeDuration:(CGFloat)fadeDuration{
+    [self stopAudiosInLine:line andAlsoWithName:nil andAlsoWithPath:nil withFadeDuration:fadeDuration];
 }
 
--(void)stopAllAudiosWithoutLine{
-    [self stopAudiosInLine:kAMGSoundManagerDefaultLine andAlsoWithName:nil andAlsoWithPath:nil];
+-(void)stopAllAudiosWithoutLineWithFadeDuration:(CGFloat)fadeDuration{
+    [self stopAudiosInLine:kAMGSoundManagerDefaultLine andAlsoWithName:nil andAlsoWithPath:nil withFadeDuration:fadeDuration];
 }
 
--(void)stopAudioWithName:(NSString *)name{
-    [self stopAudiosInLine:nil andAlsoWithName:name andAlsoWithPath:nil];
+-(void)stopAudioWithName:(NSString *)name withFadeDuration:(CGFloat)fadeDuration{
+    [self stopAudiosInLine:nil andAlsoWithName:name andAlsoWithPath:nil withFadeDuration:fadeDuration];
 }
 
--(void)stopAudioWithPath:(NSString *)path{
-    [self stopAudiosInLine:nil andAlsoWithName:nil andAlsoWithPath:path];
+-(void)stopAudioWithPath:(NSString *)path withFadeDuration:(CGFloat)fadeDuration{
+    [self stopAudiosInLine:nil andAlsoWithName:nil andAlsoWithPath:path withFadeDuration:fadeDuration];
 }
 
--(void)stopAudiosInLine:(NSString *)line andAlsoWithName:(NSString *)name andAlsoWithPath:(NSString *)path{
+-(void)stopAudiosInLine:(NSString *)line andAlsoWithName:(NSString *)name andAlsoWithPath:(NSString *)path withFadeDuration:(CGFloat)fadeDuration{
     for(NSString *key in self.sounds.allKeys){
         if(line && [line compare:key]!=NSOrderedSame)
             continue;
         
         NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
         for(NSDictionary *dict in mut){
-            AVAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
+            AMGAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
             NSString *audio = [dict objectForKey:kAMGSoundManagerKeyName];
             NSString *audioPath = [dict objectForKey:kAMGSoundManagerKeyPath];
             void (^handler)(BOOL success, BOOL stopped) = [dict objectForKey:kAMGSoundManagerKeyHandler];
@@ -162,29 +139,45 @@ static AMGSoundManager *_sharedManager;
             if(path && [path compare:audioPath]!=NSOrderedSame)
                 continue;
             
-            [self stopAudio:player];
-            if(handler!=nil){
-                handler(YES,YES);
+            player.delegate = nil;
+            
+            if(fadeDuration == 0.0){
+                [player stop];
+                
+                if(handler!=nil){
+                    handler(YES,YES);
+                }
+                
+                NSMutableArray *mut2 = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
+                [mut2 removeObject:dict];
+                [self.sounds setObject:mut2 forKey:key];
+            }else{
+                [player setVolume:0.0 withFadeDuration:fadeDuration];
+                [self performSelector:@selector(stopAudioFaded:) withObject:player afterDelay:fadeDuration];
+                
+                if(handler!=nil){
+                    handler(YES,YES);
+                }
+                
+                NSMutableArray *mut2 = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
+                [mut2 removeObject:dict];
+                [self.sounds setObject:mut2 forKey:key];
             }
             
-            NSMutableArray *mut2 = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
-            [mut2 removeObject:dict];
-            [self.sounds setObject:mut2 forKey:key];
         }
     }
 }
 
--(void)stopAudio:(AVAudioPlayer *)player{
-    player.delegate = nil;
+-(void)stopAudioFaded:(AMGAudioPlayer *)player{
     [player stop];
 }
 
 
-- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+- (void)audioPlayerDidFinishPlaying:(AMGAudioPlayer *)player successfully:(BOOL)flag{
     for(NSString *key in self.sounds.allKeys){
         NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
         for(NSDictionary *dict in mut){
-            AVAudioPlayer *playerToCheck = [dict objectForKey:kAMGSoundManagerKeyPlayer];
+            AMGAudioPlayer *playerToCheck = [dict objectForKey:kAMGSoundManagerKeyPlayer];
             NSString *audio = [dict objectForKey:kAMGSoundManagerKeyName];
             void (^handler)(BOOL success, BOOL stopped) = [dict objectForKey:kAMGSoundManagerKeyHandler];
             if(player == playerToCheck){
@@ -207,11 +200,11 @@ static AMGSoundManager *_sharedManager;
     }
 }
 
-- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError *)error{
+- (void)audioPlayerDecodeErrorDidOccur:(AMGAudioPlayer *)player error:(NSError *)error{
     for(NSString *key in self.sounds.allKeys){
         NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
         for(NSDictionary *dict in mut){
-            AVAudioPlayer *playerToCheck = [dict objectForKey:kAMGSoundManagerKeyPlayer];
+            AMGAudioPlayer *playerToCheck = [dict objectForKey:kAMGSoundManagerKeyPlayer];
             NSString *audio = [dict objectForKey:kAMGSoundManagerKeyName];
             void (^handler)(BOOL success, BOOL stopped) = [dict objectForKey:kAMGSoundManagerKeyHandler];
             if(player == playerToCheck){
@@ -245,7 +238,7 @@ static AMGSoundManager *_sharedManager;
         
         NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
         for(NSDictionary *dict in mut){
-            AVAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
+            AMGAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
             NSString *audio = [dict objectForKey:kAMGSoundManagerKeyName];
             
             if(name && [name compare:audio]!=NSOrderedSame)
@@ -259,16 +252,15 @@ static AMGSoundManager *_sharedManager;
 }
 
 
--(void)setVolume:(float)volum forLine:(NSString*)line{
+-(void)setVolume:(float)volume forLine:(NSString*)line withFadeDuration:(CGFloat)fadeDuration{
     for(NSString *key in self.sounds.allKeys){
         if(line && [line compare:key]!=NSOrderedSame)
             continue;
         
         NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
         for(NSDictionary *dict in mut){
-            AVAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
-            
-            [player setVolume:volum];
+            AMGAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
+            [player setVolume:volume withFadeDuration:fadeDuration];
         }
     }
 }
@@ -280,7 +272,7 @@ static AMGSoundManager *_sharedManager;
         
         NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
         for(NSDictionary *dict in mut){
-            AVAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
+            AMGAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
             
             if([player isPlaying])
                 [player pause];
@@ -295,7 +287,7 @@ static AMGSoundManager *_sharedManager;
         
         NSMutableArray *mut = [NSMutableArray arrayWithArray:[self.sounds objectForKey:key]];
         for(NSDictionary *dict in mut){
-            AVAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
+            AMGAudioPlayer *player = [dict objectForKey:kAMGSoundManagerKeyPlayer];
             
             if(![player isPlaying])
                 [player play];

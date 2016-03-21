@@ -35,35 +35,27 @@ To create the singleton just write:
 To play an audio, AMGSoundManager provides multiple options:
 
 ```
--(BOOL)playAudioAtPath:(NSString *)audioPath withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(NSString *)audioPathOrData withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(NSString *)audioPathOrData withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(NSString *)audioPathOrData withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(NSString *)audioPathOrData withName:(NSString *)name inLine:(NSString *)line withVolume:(float)volum andRepeatCount:(int)repeatCount fadeDuration:(CGFloat)fadeDuration withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
 ```
 
-As you can see, you can simply play an audio with just it's path. But also you can specify a name, line, volume and repeat count. Finally, if you want, you can specify a complete handler or leave it as nil. If you specify a handler, it will notify you when the audio is ended, and why (if it has been stopped or not9.
+As you can see, you can simply play an audio with just it's path or the NSData. But also you can specify a name, line, volume and repeat count. Finally, if you want, you can specify a complete handler or leave it as nil. If you specify a handler, it will notify you when the audio is ended, and why (if it has been stopped or not9.
 If repeat count is -1, the audio makes a loop.
 
 The name is used to identify a single sound (or a group of sounds with the same file, or whatever you want) and the line is normally used to identify a kind of sounds such as sfx, voices, background sounds, etc. But it's up to you what name and line you want to put in every sound.
 
-You can also play an audio with a NSData.
-```
--(BOOL)playAudioWithData:(NSData *)data withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler; 
-```
+If you specify 0.0 in the fadeDuration in all methods, it will simply ignore the fade.
 
 Then, you can stop the audios with the following methods:
 
 ```
--(void)stopAllAudios;
--(void)stopAllAudiosForLine:(NSString *)line;
--(void)stopAllAudiosWithoutLine;
--(void)stopAudioWithName:(NSString *)name;
--(void)stopAudioWithPath:(NSString *)path;
+-(void)stopAllAudiosWithFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAllAudiosForLine:(NSString *)line withFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAllAudiosWithoutLineWithFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAudioWithName:(NSString *)name withFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAudioWithPath:(NSString *)path withFadeDuration:(CGFloat)fadeDuration;
 ```
 
 Also, if you want to check if an audio is currently playing you can wirte:
@@ -83,7 +75,7 @@ You can also pause and resume an audio:
 And the most awesome feature: you can change the volume of any audio currently playing!
 
 ```
--(void)setVolume:(float)volum forLine:(NSString*)line;
+-(void)setVolume:(float)volum forLine:(NSString*)line withFadeDuration:(CGFloat)fadeDuration;
 ```
 
 AMGSoundManager also implements a delegate to notify when an audio has finished or has given some kind of error.
@@ -123,24 +115,38 @@ Run a background sound:
 
 ```
 if(![[AMGSoundManager sharedManager] isAudioPlayingInLine:@"background"]){
-    [[AMGSoundManager sharedManager] playAudioAtPath:[[NSBundle mainBundle] pathForResource:@"background_music" ofType:@"mp3"]
-                                            withName:@"ambient"
-                                              inLine:@"background"
-                                           withVolum:0.3
-                                      andRepeatCount:-1];
+    [[AMGSoundManager sharedManager] playAudio:[[NSBundle mainBundle] pathForResource:@"background_music" ofType:@"mp3"]
+                                      withName:@"ambient"
+                                        inLine:@"background"
+                                    withVolume:volume_slider.value
+                                andRepeatCount:-1
+                                  fadeDuration:1.0
+                       withCompletitionHandler:^(BOOL success, BOOL stopped) {
+                           NSLog(@"Audio has ended!");
+                       }];
 }
 ```
 
 To stop all audios in a line:
 
 ```
-[[AMGSoundManager sharedManager] stopAllAudiosForLine:@"background"];
+[[AMGSoundManager sharedManager] stopAllAudiosForLine:@"background" withFadeDuration:1.0];
 ```
 
 To change the volume of an audio in live:
 
 ```
-[[AMGSoundManager sharedManager] setVolume:2.0 forLine:@"background"];
+[[AMGSoundManager sharedManager] setVolume:1.0 forLine:@"background" withFadeDuration:1.0];
+```
+
+
+## AMGAudioPlayer
+
+All instances in AMGSoundManager are AMGAudioPlayer.
+You can create new instances of AMGAudioPlayer by your own to be able to simply change the audio volume with fade animation.
+
+```
+[player setVolume:volume withFadeDuration:fadeDuration];
 ```
 
 ## License

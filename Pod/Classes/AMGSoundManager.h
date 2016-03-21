@@ -11,14 +11,6 @@
 
 #define kSoundManagerAudioEnded @"SoundManagerAudioEnded"
 
-#define kAMGSoundManagerDefaultLine @"default"
-
-#define kAMGSoundManagerKeyName @"name"
-#define kAMGSoundManagerKeyPath @"path"
-#define kAMGSoundManagerKeyPlayer @"player"
-#define kAMGSoundManagerKeyHandler @"handler"
-
-
 @protocol AMGSoundManagerDelegate;
 
 @interface AMGSoundManager : NSObject <AVAudioPlayerDelegate> 
@@ -28,25 +20,18 @@
 
 +(AMGSoundManager*)sharedManager;
 
--(BOOL)playAudioAtPath:(NSString *)audioPath withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioAtPath:(NSString *)audioPath withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(id)audioPathOrData withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(id)audioPathOrData withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(id)audioPathOrData withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(BOOL)playAudio:(id)audioPathOrData withName:(NSString *)name inLine:(NSString *)line withVolume:(float)volume andRepeatCount:(int)repeatCount fadeDuration:(CGFloat)fadeDuration withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
 
--(BOOL)playAudioWithData:(NSData *)data withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
--(BOOL)playAudioWithData:(NSData *)data withName:(NSString *)name inLine:(NSString *)line withVolum:(float)volum andRepeatCount:(int)repeatCount withCompletitionHandler:(void (^)(BOOL success, BOOL stopped))handler;
+-(void)stopAllAudiosWithFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAllAudiosForLine:(NSString *)line withFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAllAudiosWithoutLineWithFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAudioWithName:(NSString *)name withFadeDuration:(CGFloat)fadeDuration;
+-(void)stopAudioWithPath:(NSString *)path withFadeDuration:(CGFloat)fadeDuration;
 
--(void)stopAllAudios;
--(void)stopAllAudiosForLine:(NSString *)line;
--(void)stopAllAudiosWithoutLine;
--(void)stopAudioWithName:(NSString *)name;
--(void)stopAudioWithPath:(NSString *)path;
-
--(void)setVolume:(float)volum forLine:(NSString*)line;
+-(void)setVolume:(float)volum forLine:(NSString*)line withFadeDuration:(CGFloat)fadeDuration;
 -(BOOL)isAudioPlayingInLine:(NSString *)line;
 -(BOOL)isAudioPlayingInLine:(NSString *)line withName:(NSString *)name;
 -(void)pauseAudiosInLine:(NSString *)line;

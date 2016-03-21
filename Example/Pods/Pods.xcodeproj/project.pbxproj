@@ -1,1815 +1,856 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01A4E68A7FDD7E8852D8F7F5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9848A5A6AF02ACFC6810C672</string>
-				<string>7E38DCF1542D95BCEAD0E520</string>
-				<string>A3E7F6B13FF369ADB519D659</string>
-				<string>ACFB6F1E08C9011B6947D501</string>
-				<string>CF2DBE7ECCE920C1617A4C70</string>
-				<string>D51B14DC1B509A0FD7568BC6</string>
-				<string>9F0FC31B362A09B0DD82BC2B</string>
-				<string>65E9D338BCFB99B0B435C34A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/Pods-AMGSoundManager-AMGSoundManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>03E7B2BDFD4D78DD4248FE32</key>
-		<dict>
-			<key>fileRef</key>
-			<string>13087D017B37D910EBEED587</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09441E63777F668C42A3D450</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09A135D8B832F8DEE74E0149</key>
-		<dict>
-			<key>fileRef</key>
-			<string>13087D017B37D910EBEED587</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0C018EDDC6776D7E753EDBD7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E5759FC57CD0A12787E1539</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9F0FC31B362A09B0DD82BC2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>13087D017B37D910EBEED587</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AMGSoundManager.m</string>
-			<key>path</key>
-			<string>Pod/Classes/AMGSoundManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>139D603014BF61B47389D9C6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1FD755DA3AA22E80150B8708</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>238028F501D2B9073F246DB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5742400A21B0B5CCEA23204A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>27E0728E7C4A73D81CAD7395</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93E9869F94E449F4946024A0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>29A25413998AD25256410390</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>2C1D677BAA67FC66A58FB067</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2E35D78FB40127D738DCE180</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-Tests-AMGSoundManager</string>
-			<key>target</key>
-			<string>8EDF7F0DD26CDA1A651D9CDA</string>
-			<key>targetProxy</key>
-			<string>A2DDF262FC427F9A395093E3</string>
-		</dict>
-		<key>30B0E67491AE82BA52AD007D</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3E684EF8AFF7128FB5260660</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FA49ACCC6079128F2AB808DB</string>
-			<key>remoteInfo</key>
-			<string>AMGSoundManager</string>
-		</dict>
-		<key>30FC98CE4157A8FA3366BD0F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F683ED09F584EC0808D48A01</string>
-				<string>6FACF26D0C0C8046CFC79CE5</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>31A1631EA856C4434C856035</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>33AD3934661B319FBA86A6BB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5742400A21B0B5CCEA23204A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>33AEDE0D055658785CF94044</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AMGSoundManager.h</string>
-			<key>path</key>
-			<string>Pod/Classes/AMGSoundManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>370DDF9CA3258DDC9089BA6D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>38F0A2C1ABCABEF63F6217E1</string>
-				<string>31A1631EA856C4434C856035</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>379F315233945E030C0DB65B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>94AC33EA248FBD495894FBEF</string>
-				<string>FCE97433607B21CA39C6B737</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>38F0A2C1ABCABEF63F6217E1</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3A2027C5BC106FC9B548A8DC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B38CC43D177E86E2B07AB44E</string>
-				<string>5870040FDED69893A65FC33E</string>
-				<string>AA1FAEE8A83D8DED9C2159F3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>3C3F9801B501E12CE32D9D12</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>379F315233945E030C0DB65B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C505AD9252DFD65619CE0625</string>
-				<string>7242FEC214E9214475899F56</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D0042012E43D2F64ABB343E4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-AMGSoundManager</string>
-			<key>productName</key>
-			<string>Pods-AMGSoundManager</string>
-			<key>productReference</key>
-			<string>A6C5988964D92ECAFD609C16</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>3C57066C4E4C531A95896C4E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7E38DCF1542D95BCEAD0E520</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AMGSoundManager-AMGSoundManager/Pods-AMGSoundManager-AMGSoundManager-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>3DAEAB8A916B295770D10C5C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E684EF8AFF7128FB5260660</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>EF799E59613C4605BE33EB04</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>42BCEEEDCB67E2EC4304038F</string>
-			<key>productRefGroup</key>
-			<string>A2E1F71985242331131CF627</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>FA49ACCC6079128F2AB808DB</string>
-				<string>3C3F9801B501E12CE32D9D12</string>
-				<string>E02E0D81E01B16ABBF7E507A</string>
-				<string>75EF6DD99951AC28D56B3D03</string>
-				<string>8EDF7F0DD26CDA1A651D9CDA</string>
-			</array>
-		</dict>
-		<key>3EAD8D0AD04D7DEF95ADD8E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5742400A21B0B5CCEA23204A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>422FB606F43570FDA047C89B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>09A135D8B832F8DEE74E0149</string>
-				<string>C97A3DC090B9532022A762E3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>428D709EF5B7BA3CAB473561</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42BCEEEDCB67E2EC4304038F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>29A25413998AD25256410390</string>
-				<string>CAF19D6F0582388171E9A895</string>
-				<string>27E0728E7C4A73D81CAD7395</string>
-				<string>A2E1F71985242331131CF627</string>
-				<string>54BFB5A1DE44C9003CEEA714</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>47A4C2F68E66FBFBB57F9FF3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FF29855EFBC304C7FD0B25C3</string>
-				<string>238028F501D2B9073F246DB0</string>
-				<string>9DE4659136CC7CD9BF9B3962</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>50A86769B8BAB8C323D852F0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>53DBE806AAFDD9A5AAAC1A48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>33AEDE0D055658785CF94044</string>
-				<string>13087D017B37D910EBEED587</string>
-				<string>01A4E68A7FDD7E8852D8F7F5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AMGSoundManager</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54BFB5A1DE44C9003CEEA714</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EC0587137CAD1295E1C73FF6</string>
-				<string>EF0A84067DD948A15F1849B8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>54FA69DD830EC84D6B4592B8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>AMGSoundManager</string>
-			<key>target</key>
-			<string>FA49ACCC6079128F2AB808DB</string>
-			<key>targetProxy</key>
-			<string>E9B86C704F14D4698C7B72E9</string>
-		</dict>
-		<key>5742400A21B0B5CCEA23204A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>5870040FDED69893A65FC33E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5742400A21B0B5CCEA23204A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>58D19BDDFD064BA0EC205074</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DC99C946859FA2CE15942A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>58D19BDDFD064BA0EC205074</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5FF97C5FDB3809976AB295F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>60595904ACE633E7A14E6813</key>
-		<dict>
-			<key>fileRef</key>
-			<string>33AEDE0D055658785CF94044</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>64E57516C8501E1E7ACBA1BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65E9D338BCFB99B0B435C34A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Pods-Tests-AMGSoundManager-prefix.pch</string>
-			<key>path</key>
-			<string>../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A0BCC40FC9727E3A6F986DD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>60595904ACE633E7A14E6813</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E88D3BDF064CA2D796DF369</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6FACF26D0C0C8046CFC79CE5</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D51B14DC1B509A0FD7568BC6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7242FEC214E9214475899F56</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3EAD8D0AD04D7DEF95ADD8E2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>75EF6DD99951AC28D56B3D03</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D94F7A0AD0B13E091E1391F9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B6119B5A8CD3DCF68AEA59DE</string>
-				<string>8646763EDE86CACE44C181C3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>2E35D78FB40127D738DCE180</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>productName</key>
-			<string>Pods-Tests</string>
-			<key>productReference</key>
-			<string>BC62FD639D8328237871AB61</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>7630AB1A1CD4E5E8D1FB8728</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests-AMGSoundManager.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7A42521D9C63C92998CAE409</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7BBA741CE410FF5155B9F4C3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>86C1729FEC9073F88302E4B4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>7E38DCF1542D95BCEAD0E520</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8646763EDE86CACE44C181C3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>33AD3934661B319FBA86A6BB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>86C1729FEC9073F88302E4B4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>33AEDE0D055658785CF94044</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8EDF7F0DD26CDA1A651D9CDA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>30FC98CE4157A8FA3366BD0F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A0731B9C187A9B9795207909</string>
-				<string>47A4C2F68E66FBFBB57F9FF3</string>
-				<string>6A0BCC40FC9727E3A6F986DD</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>54FA69DD830EC84D6B4592B8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Tests-AMGSoundManager</string>
-			<key>productName</key>
-			<string>Pods-Tests-AMGSoundManager</string>
-			<key>productReference</key>
-			<string>7630AB1A1CD4E5E8D1FB8728</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>93E9869F94E449F4946024A0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BAB236FF215463F41C476771</string>
-				<string>5742400A21B0B5CCEA23204A</string>
-				<string>5FF97C5FDB3809976AB295F6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>94AC33EA248FBD495894FBEF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3DAEAB8A916B295770D10C5C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9550939F875B5D45FA104FE8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>AMGSoundManager</string>
-			<key>target</key>
-			<string>FA49ACCC6079128F2AB808DB</string>
-			<key>targetProxy</key>
-			<string>30B0E67491AE82BA52AD007D</string>
-		</dict>
-		<key>9848A5A6AF02ACFC6810C672</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9DE4659136CC7CD9BF9B3962</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FF97C5FDB3809976AB295F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9F0FC31B362A09B0DD82BC2B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Pods-Tests-AMGSoundManager-dummy.m</string>
-			<key>path</key>
-			<string>../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A0731B9C187A9B9795207909</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>03E7B2BDFD4D78DD4248FE32</string>
-				<string>0E5759FC57CD0A12787E1539</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A2DDF262FC427F9A395093E3</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3E684EF8AFF7128FB5260660</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>8EDF7F0DD26CDA1A651D9CDA</string>
-			<key>remoteInfo</key>
-			<string>Pods-Tests-AMGSoundManager</string>
-		</dict>
-		<key>A2E1F71985242331131CF627</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ADA3F6031FB0F86FBCC7F516</string>
-				<string>A6C5988964D92ECAFD609C16</string>
-				<string>B8B8F9D7327D0690990A703B</string>
-				<string>BC62FD639D8328237871AB61</string>
-				<string>7630AB1A1CD4E5E8D1FB8728</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3E7F6B13FF369ADB519D659</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A6C5988964D92ECAFD609C16</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-AMGSoundManager.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A7364748A798741B93B646D2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>428D709EF5B7BA3CAB473561</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A7D8602D3EB4801BCFF55905</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA1FAEE8A83D8DED9C2159F3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5FF97C5FDB3809976AB295F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ACFB6F1E08C9011B6947D501</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ADA3F6031FB0F86FBCC7F516</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AMGSoundManager.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B38CC43D177E86E2B07AB44E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BAB236FF215463F41C476771</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6119B5A8CD3DCF68AEA59DE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C896BF21FFF4898EC28B045E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B8B8F9D7327D0690990A703B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-AMGSoundManager-AMGSoundManager.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BAB236FF215463F41C476771</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AVFoundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>BC13B427BAA87E01EF8250F6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7A42521D9C63C92998CAE409</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BC62FD639D8328237871AB61</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Tests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BE9DBC69CA2E7A281C1D47CE</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7E38DCF1542D95BCEAD0E520</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-AMGSoundManager-AMGSoundManager/Pods-AMGSoundManager-AMGSoundManager-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BF1E180CC8F63A0DDBB749AE</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3E684EF8AFF7128FB5260660</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E02E0D81E01B16ABBF7E507A</string>
-			<key>remoteInfo</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager</string>
-		</dict>
-		<key>C070C23B708DCF4A1F87DC45</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C505AD9252DFD65619CE0625</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5DC99C946859FA2CE15942A2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C896BF21FFF4898EC28B045E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB5EEC7761B713C575D84521</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C97A3DC090B9532022A762E3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3E7F6B13FF369ADB519D659</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CAF19D6F0582388171E9A895</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>53DBE806AAFDD9A5AAAC1A48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF2DBE7ECCE920C1617A4C70</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests-AMGSoundManager.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF4FBD991301D26103D8F251</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>3C57066C4E4C531A95896C4E</string>
-				<string>BE9DBC69CA2E7A281C1D47CE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D0042012E43D2F64ABB343E4</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager</string>
-			<key>target</key>
-			<string>E02E0D81E01B16ABBF7E507A</string>
-			<key>targetProxy</key>
-			<string>BF1E180CC8F63A0DDBB749AE</string>
-		</dict>
-		<key>D51B14DC1B509A0FD7568BC6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Tests-AMGSoundManager-Private.xcconfig</string>
-			<key>path</key>
-			<string>../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D9183D31E03A55C39EDDBDF4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Tests-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D94F7A0AD0B13E091E1391F9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BC13B427BAA87E01EF8250F6</string>
-				<string>A7364748A798741B93B646D2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DB5EEC7761B713C575D84521</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF73B0952C47E51233760872</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E02E0D81E01B16ABBF7E507A</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CF4FBD991301D26103D8F251</string>
-			<key>buildPhases</key>
-			<array>
-				<string>422FB606F43570FDA047C89B</string>
-				<string>3A2027C5BC106FC9B548A8DC</string>
-				<string>7BBA741CE410FF5155B9F4C3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>9550939F875B5D45FA104FE8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager</string>
-			<key>productName</key>
-			<string>Pods-AMGSoundManager-AMGSoundManager</string>
-			<key>productReference</key>
-			<string>B8B8F9D7327D0690990A703B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>E9B86C704F14D4698C7B72E9</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>3E684EF8AFF7128FB5260660</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FA49ACCC6079128F2AB808DB</string>
-			<key>remoteInfo</key>
-			<string>AMGSoundManager</string>
-		</dict>
-		<key>EC0587137CAD1295E1C73FF6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F7B10860BA7949E6D06319F9</string>
-				<string>2C1D677BAA67FC66A58FB067</string>
-				<string>58D19BDDFD064BA0EC205074</string>
-				<string>6E88D3BDF064CA2D796DF369</string>
-				<string>0C018EDDC6776D7E753EDBD7</string>
-				<string>3DAEAB8A916B295770D10C5C</string>
-				<string>C070C23B708DCF4A1F87DC45</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-AMGSoundManager</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-AMGSoundManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF0A84067DD948A15F1849B8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>64E57516C8501E1E7ACBA1BB</string>
-				<string>A7D8602D3EB4801BCFF55905</string>
-				<string>DB5EEC7761B713C575D84521</string>
-				<string>D9183D31E03A55C39EDDBDF4</string>
-				<string>09441E63777F668C42A3D450</string>
-				<string>7A42521D9C63C92998CAE409</string>
-				<string>428D709EF5B7BA3CAB473561</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EF0C1B62798EAB07D48607E9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EF799E59613C4605BE33EB04</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1FD755DA3AA22E80150B8708</string>
-				<string>139D603014BF61B47389D9C6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>F683ED09F584EC0808D48A01</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D51B14DC1B509A0FD7568BC6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F7B10860BA7949E6D06319F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-AMGSoundManager-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA49ACCC6079128F2AB808DB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>370DDF9CA3258DDC9089BA6D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EF0C1B62798EAB07D48607E9</string>
-				<string>DF73B0952C47E51233760872</string>
-				<string>50A86769B8BAB8C323D852F0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AMGSoundManager</string>
-			<key>productName</key>
-			<string>AMGSoundManager</string>
-			<key>productReference</key>
-			<string>ADA3F6031FB0F86FBCC7F516</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>FCE97433607B21CA39C6B737</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C070C23B708DCF4A1F87DC45</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FF29855EFBC304C7FD0B25C3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BAB236FF215463F41C476771</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>3E684EF8AFF7128FB5260660</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E7B2BDFD4D78DD4248FE32 /* AMGSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13087D017B37D910EBEED587 /* AMGSoundManager.m */; };
+		09A135D8B832F8DEE74E0149 /* AMGSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13087D017B37D910EBEED587 /* AMGSoundManager.m */; };
+		0E5759FC57CD0A12787E1539 /* Pods-Tests-AMGSoundManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0FC31B362A09B0DD82BC2B /* Pods-Tests-AMGSoundManager-dummy.m */; };
+		238028F501D2B9073F246DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742400A21B0B5CCEA23204A /* Foundation.framework */; };
+		33AD3934661B319FBA86A6BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742400A21B0B5CCEA23204A /* Foundation.framework */; };
+		3EAD8D0AD04D7DEF95ADD8E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742400A21B0B5CCEA23204A /* Foundation.framework */; };
+		40D8EC5A1CA00036008D71E5 /* AMGAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D8EC571CA0002B008D71E5 /* AMGAudioPlayer.h */; };
+		40D8EC5B1CA00037008D71E5 /* AMGAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 40D8EC571CA0002B008D71E5 /* AMGAudioPlayer.h */; };
+		40D8EC5C1CA0003E008D71E5 /* AMGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D8EC581CA0002B008D71E5 /* AMGAudioPlayer.m */; };
+		40D8EC5D1CA0003F008D71E5 /* AMGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D8EC581CA0002B008D71E5 /* AMGAudioPlayer.m */; };
+		5870040FDED69893A65FC33E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5742400A21B0B5CCEA23204A /* Foundation.framework */; };
+		5DC99C946859FA2CE15942A2 /* Pods-AMGSoundManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D19BDDFD064BA0EC205074 /* Pods-AMGSoundManager-dummy.m */; };
+		60595904ACE633E7A14E6813 /* AMGSoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AEDE0D055658785CF94044 /* AMGSoundManager.h */; };
+		86C1729FEC9073F88302E4B4 /* AMGSoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AEDE0D055658785CF94044 /* AMGSoundManager.h */; };
+		9DE4659136CC7CD9BF9B3962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF97C5FDB3809976AB295F6 /* UIKit.framework */; };
+		AA1FAEE8A83D8DED9C2159F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF97C5FDB3809976AB295F6 /* UIKit.framework */; };
+		B38CC43D177E86E2B07AB44E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB236FF215463F41C476771 /* AVFoundation.framework */; };
+		C896BF21FFF4898EC28B045E /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5EEC7761B713C575D84521 /* Pods-Tests-dummy.m */; };
+		C97A3DC090B9532022A762E3 /* Pods-AMGSoundManager-AMGSoundManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E7F6B13FF369ADB519D659 /* Pods-AMGSoundManager-AMGSoundManager-dummy.m */; };
+		FF29855EFBC304C7FD0B25C3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB236FF215463F41C476771 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30B0E67491AE82BA52AD007D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E684EF8AFF7128FB5260660 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA49ACCC6079128F2AB808DB;
+			remoteInfo = AMGSoundManager;
+		};
+		A2DDF262FC427F9A395093E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E684EF8AFF7128FB5260660 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EDF7F0DD26CDA1A651D9CDA;
+			remoteInfo = "Pods-Tests-AMGSoundManager";
+		};
+		BF1E180CC8F63A0DDBB749AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E684EF8AFF7128FB5260660 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02E0D81E01B16ABBF7E507A;
+			remoteInfo = "Pods-AMGSoundManager-AMGSoundManager";
+		};
+		E9B86C704F14D4698C7B72E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E684EF8AFF7128FB5260660 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA49ACCC6079128F2AB808DB;
+			remoteInfo = AMGSoundManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09441E63777F668C42A3D450 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		0C018EDDC6776D7E753EDBD7 /* Pods-AMGSoundManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMGSoundManager-resources.sh"; sourceTree = "<group>"; };
+		13087D017B37D910EBEED587 /* AMGSoundManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMGSoundManager.m; path = Pod/Classes/AMGSoundManager.m; sourceTree = "<group>"; };
+		29A25413998AD25256410390 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2C1D677BAA67FC66A58FB067 /* Pods-AMGSoundManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMGSoundManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		33AEDE0D055658785CF94044 /* AMGSoundManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMGSoundManager.h; path = Pod/Classes/AMGSoundManager.h; sourceTree = "<group>"; };
+		3DAEAB8A916B295770D10C5C /* Pods-AMGSoundManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMGSoundManager.debug.xcconfig"; sourceTree = "<group>"; };
+		40D8EC571CA0002B008D71E5 /* AMGAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMGAudioPlayer.h; path = Pod/Classes/AMGAudioPlayer.h; sourceTree = "<group>"; };
+		40D8EC581CA0002B008D71E5 /* AMGAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMGAudioPlayer.m; path = Pod/Classes/AMGAudioPlayer.m; sourceTree = "<group>"; };
+		428D709EF5B7BA3CAB473561 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5742400A21B0B5CCEA23204A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		58D19BDDFD064BA0EC205074 /* Pods-AMGSoundManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMGSoundManager-dummy.m"; sourceTree = "<group>"; };
+		5FF97C5FDB3809976AB295F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		64E57516C8501E1E7ACBA1BB /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65E9D338BCFB99B0B435C34A /* Pods-Tests-AMGSoundManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-AMGSoundManager-prefix.pch"; path = "../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-prefix.pch"; sourceTree = "<group>"; };
+		6E88D3BDF064CA2D796DF369 /* Pods-AMGSoundManager-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMGSoundManager-environment.h"; sourceTree = "<group>"; };
+		7630AB1A1CD4E5E8D1FB8728 /* libPods-Tests-AMGSoundManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-AMGSoundManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A42521D9C63C92998CAE409 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E38DCF1542D95BCEAD0E520 /* Pods-AMGSoundManager-AMGSoundManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMGSoundManager-AMGSoundManager-Private.xcconfig"; sourceTree = "<group>"; };
+		9848A5A6AF02ACFC6810C672 /* Pods-AMGSoundManager-AMGSoundManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMGSoundManager-AMGSoundManager.xcconfig"; sourceTree = "<group>"; };
+		9F0FC31B362A09B0DD82BC2B /* Pods-Tests-AMGSoundManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-AMGSoundManager-dummy.m"; path = "../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-dummy.m"; sourceTree = "<group>"; };
+		A3E7F6B13FF369ADB519D659 /* Pods-AMGSoundManager-AMGSoundManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMGSoundManager-AMGSoundManager-dummy.m"; sourceTree = "<group>"; };
+		A6C5988964D92ECAFD609C16 /* libPods-AMGSoundManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMGSoundManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D8602D3EB4801BCFF55905 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ACFB6F1E08C9011B6947D501 /* Pods-AMGSoundManager-AMGSoundManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMGSoundManager-AMGSoundManager-prefix.pch"; sourceTree = "<group>"; };
+		ADA3F6031FB0F86FBCC7F516 /* AMGSoundManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMGSoundManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B8F9D7327D0690990A703B /* libPods-AMGSoundManager-AMGSoundManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AMGSoundManager-AMGSoundManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAB236FF215463F41C476771 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		BC62FD639D8328237871AB61 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C070C23B708DCF4A1F87DC45 /* Pods-AMGSoundManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMGSoundManager.release.xcconfig"; sourceTree = "<group>"; };
+		CF2DBE7ECCE920C1617A4C70 /* Pods-Tests-AMGSoundManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-AMGSoundManager.xcconfig"; path = "../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager.xcconfig"; sourceTree = "<group>"; };
+		D51B14DC1B509A0FD7568BC6 /* Pods-Tests-AMGSoundManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-AMGSoundManager-Private.xcconfig"; path = "../Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-Private.xcconfig"; sourceTree = "<group>"; };
+		D9183D31E03A55C39EDDBDF4 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		DB5EEC7761B713C575D84521 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		F7B10860BA7949E6D06319F9 /* Pods-AMGSoundManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMGSoundManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A2027C5BC106FC9B548A8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38CC43D177E86E2B07AB44E /* AVFoundation.framework in Frameworks */,
+				5870040FDED69893A65FC33E /* Foundation.framework in Frameworks */,
+				AA1FAEE8A83D8DED9C2159F3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47A4C2F68E66FBFBB57F9FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF29855EFBC304C7FD0B25C3 /* AVFoundation.framework in Frameworks */,
+				238028F501D2B9073F246DB0 /* Foundation.framework in Frameworks */,
+				9DE4659136CC7CD9BF9B3962 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7242FEC214E9214475899F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EAD8D0AD04D7DEF95ADD8E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8646763EDE86CACE44C181C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AD3934661B319FBA86A6BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF73B0952C47E51233760872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01A4E68A7FDD7E8852D8F7F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9848A5A6AF02ACFC6810C672 /* Pods-AMGSoundManager-AMGSoundManager.xcconfig */,
+				7E38DCF1542D95BCEAD0E520 /* Pods-AMGSoundManager-AMGSoundManager-Private.xcconfig */,
+				A3E7F6B13FF369ADB519D659 /* Pods-AMGSoundManager-AMGSoundManager-dummy.m */,
+				ACFB6F1E08C9011B6947D501 /* Pods-AMGSoundManager-AMGSoundManager-prefix.pch */,
+				CF2DBE7ECCE920C1617A4C70 /* Pods-Tests-AMGSoundManager.xcconfig */,
+				D51B14DC1B509A0FD7568BC6 /* Pods-Tests-AMGSoundManager-Private.xcconfig */,
+				9F0FC31B362A09B0DD82BC2B /* Pods-Tests-AMGSoundManager-dummy.m */,
+				65E9D338BCFB99B0B435C34A /* Pods-Tests-AMGSoundManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-AMGSoundManager-AMGSoundManager";
+			sourceTree = "<group>";
+		};
+		27E0728E7C4A73D81CAD7395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E9869F94E449F4946024A0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42BCEEEDCB67E2EC4304038F = {
+			isa = PBXGroup;
+			children = (
+				29A25413998AD25256410390 /* Podfile */,
+				CAF19D6F0582388171E9A895 /* Development Pods */,
+				27E0728E7C4A73D81CAD7395 /* Frameworks */,
+				A2E1F71985242331131CF627 /* Products */,
+				54BFB5A1DE44C9003CEEA714 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		53DBE806AAFDD9A5AAAC1A48 /* AMGSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				33AEDE0D055658785CF94044 /* AMGSoundManager.h */,
+				13087D017B37D910EBEED587 /* AMGSoundManager.m */,
+				40D8EC571CA0002B008D71E5 /* AMGAudioPlayer.h */,
+				40D8EC581CA0002B008D71E5 /* AMGAudioPlayer.m */,
+				01A4E68A7FDD7E8852D8F7F5 /* Support Files */,
+			);
+			name = AMGSoundManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		54BFB5A1DE44C9003CEEA714 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC0587137CAD1295E1C73FF6 /* Pods-AMGSoundManager */,
+				EF0A84067DD948A15F1849B8 /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		93E9869F94E449F4946024A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BAB236FF215463F41C476771 /* AVFoundation.framework */,
+				5742400A21B0B5CCEA23204A /* Foundation.framework */,
+				5FF97C5FDB3809976AB295F6 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A2E1F71985242331131CF627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA3F6031FB0F86FBCC7F516 /* AMGSoundManager.bundle */,
+				A6C5988964D92ECAFD609C16 /* libPods-AMGSoundManager.a */,
+				B8B8F9D7327D0690990A703B /* libPods-AMGSoundManager-AMGSoundManager.a */,
+				BC62FD639D8328237871AB61 /* libPods-Tests.a */,
+				7630AB1A1CD4E5E8D1FB8728 /* libPods-Tests-AMGSoundManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAF19D6F0582388171E9A895 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53DBE806AAFDD9A5AAAC1A48 /* AMGSoundManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EC0587137CAD1295E1C73FF6 /* Pods-AMGSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				F7B10860BA7949E6D06319F9 /* Pods-AMGSoundManager-acknowledgements.markdown */,
+				2C1D677BAA67FC66A58FB067 /* Pods-AMGSoundManager-acknowledgements.plist */,
+				58D19BDDFD064BA0EC205074 /* Pods-AMGSoundManager-dummy.m */,
+				6E88D3BDF064CA2D796DF369 /* Pods-AMGSoundManager-environment.h */,
+				0C018EDDC6776D7E753EDBD7 /* Pods-AMGSoundManager-resources.sh */,
+				3DAEAB8A916B295770D10C5C /* Pods-AMGSoundManager.debug.xcconfig */,
+				C070C23B708DCF4A1F87DC45 /* Pods-AMGSoundManager.release.xcconfig */,
+			);
+			name = "Pods-AMGSoundManager";
+			path = "Target Support Files/Pods-AMGSoundManager";
+			sourceTree = "<group>";
+		};
+		EF0A84067DD948A15F1849B8 /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				64E57516C8501E1E7ACBA1BB /* Pods-Tests-acknowledgements.markdown */,
+				A7D8602D3EB4801BCFF55905 /* Pods-Tests-acknowledgements.plist */,
+				DB5EEC7761B713C575D84521 /* Pods-Tests-dummy.m */,
+				D9183D31E03A55C39EDDBDF4 /* Pods-Tests-environment.h */,
+				09441E63777F668C42A3D450 /* Pods-Tests-resources.sh */,
+				7A42521D9C63C92998CAE409 /* Pods-Tests.debug.xcconfig */,
+				428D709EF5B7BA3CAB473561 /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A0BCC40FC9727E3A6F986DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D8EC5B1CA00037008D71E5 /* AMGAudioPlayer.h in Headers */,
+				60595904ACE633E7A14E6813 /* AMGSoundManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BBA741CE410FF5155B9F4C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D8EC5A1CA00036008D71E5 /* AMGAudioPlayer.h in Headers */,
+				86C1729FEC9073F88302E4B4 /* AMGSoundManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3C3F9801B501E12CE32D9D12 /* Pods-AMGSoundManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379F315233945E030C0DB65B /* Build configuration list for PBXNativeTarget "Pods-AMGSoundManager" */;
+			buildPhases = (
+				C505AD9252DFD65619CE0625 /* Sources */,
+				7242FEC214E9214475899F56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0042012E43D2F64ABB343E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-AMGSoundManager";
+			productName = "Pods-AMGSoundManager";
+			productReference = A6C5988964D92ECAFD609C16 /* libPods-AMGSoundManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		75EF6DD99951AC28D56B3D03 /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94F7A0AD0B13E091E1391F9 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				B6119B5A8CD3DCF68AEA59DE /* Sources */,
+				8646763EDE86CACE44C181C3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E35D78FB40127D738DCE180 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = BC62FD639D8328237871AB61 /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8EDF7F0DD26CDA1A651D9CDA /* Pods-Tests-AMGSoundManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30FC98CE4157A8FA3366BD0F /* Build configuration list for PBXNativeTarget "Pods-Tests-AMGSoundManager" */;
+			buildPhases = (
+				A0731B9C187A9B9795207909 /* Sources */,
+				47A4C2F68E66FBFBB57F9FF3 /* Frameworks */,
+				6A0BCC40FC9727E3A6F986DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54FA69DD830EC84D6B4592B8 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-AMGSoundManager";
+			productName = "Pods-Tests-AMGSoundManager";
+			productReference = 7630AB1A1CD4E5E8D1FB8728 /* libPods-Tests-AMGSoundManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E02E0D81E01B16ABBF7E507A /* Pods-AMGSoundManager-AMGSoundManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4FBD991301D26103D8F251 /* Build configuration list for PBXNativeTarget "Pods-AMGSoundManager-AMGSoundManager" */;
+			buildPhases = (
+				422FB606F43570FDA047C89B /* Sources */,
+				3A2027C5BC106FC9B548A8DC /* Frameworks */,
+				7BBA741CE410FF5155B9F4C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9550939F875B5D45FA104FE8 /* PBXTargetDependency */,
+			);
+			name = "Pods-AMGSoundManager-AMGSoundManager";
+			productName = "Pods-AMGSoundManager-AMGSoundManager";
+			productReference = B8B8F9D7327D0690990A703B /* libPods-AMGSoundManager-AMGSoundManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FA49ACCC6079128F2AB808DB /* AMGSoundManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370DDF9CA3258DDC9089BA6D /* Build configuration list for PBXNativeTarget "AMGSoundManager" */;
+			buildPhases = (
+				EF0C1B62798EAB07D48607E9 /* Sources */,
+				DF73B0952C47E51233760872 /* Frameworks */,
+				50A86769B8BAB8C323D852F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMGSoundManager;
+			productName = AMGSoundManager;
+			productReference = ADA3F6031FB0F86FBCC7F516 /* AMGSoundManager.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E684EF8AFF7128FB5260660 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = EF799E59613C4605BE33EB04 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42BCEEEDCB67E2EC4304038F;
+			productRefGroup = A2E1F71985242331131CF627 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA49ACCC6079128F2AB808DB /* AMGSoundManager */,
+				3C3F9801B501E12CE32D9D12 /* Pods-AMGSoundManager */,
+				E02E0D81E01B16ABBF7E507A /* Pods-AMGSoundManager-AMGSoundManager */,
+				75EF6DD99951AC28D56B3D03 /* Pods-Tests */,
+				8EDF7F0DD26CDA1A651D9CDA /* Pods-Tests-AMGSoundManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50A86769B8BAB8C323D852F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		422FB606F43570FDA047C89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D8EC5C1CA0003E008D71E5 /* AMGAudioPlayer.m in Sources */,
+				09A135D8B832F8DEE74E0149 /* AMGSoundManager.m in Sources */,
+				C97A3DC090B9532022A762E3 /* Pods-AMGSoundManager-AMGSoundManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0731B9C187A9B9795207909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D8EC5D1CA0003F008D71E5 /* AMGAudioPlayer.m in Sources */,
+				03E7B2BDFD4D78DD4248FE32 /* AMGSoundManager.m in Sources */,
+				0E5759FC57CD0A12787E1539 /* Pods-Tests-AMGSoundManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6119B5A8CD3DCF68AEA59DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C896BF21FFF4898EC28B045E /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C505AD9252DFD65619CE0625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC99C946859FA2CE15942A2 /* Pods-AMGSoundManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0C1B62798EAB07D48607E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E35D78FB40127D738DCE180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-AMGSoundManager";
+			target = 8EDF7F0DD26CDA1A651D9CDA /* Pods-Tests-AMGSoundManager */;
+			targetProxy = A2DDF262FC427F9A395093E3 /* PBXContainerItemProxy */;
+		};
+		54FA69DD830EC84D6B4592B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMGSoundManager;
+			target = FA49ACCC6079128F2AB808DB /* AMGSoundManager */;
+			targetProxy = E9B86C704F14D4698C7B72E9 /* PBXContainerItemProxy */;
+		};
+		9550939F875B5D45FA104FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AMGSoundManager;
+			target = FA49ACCC6079128F2AB808DB /* AMGSoundManager */;
+			targetProxy = 30B0E67491AE82BA52AD007D /* PBXContainerItemProxy */;
+		};
+		D0042012E43D2F64ABB343E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AMGSoundManager-AMGSoundManager";
+			target = E02E0D81E01B16ABBF7E507A /* Pods-AMGSoundManager-AMGSoundManager */;
+			targetProxy = BF1E180CC8F63A0DDBB749AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		139D603014BF61B47389D9C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FD755DA3AA22E80150B8708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		31A1631EA856C4434C856035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		38F0A2C1ABCABEF63F6217E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3C57066C4E4C531A95896C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E38DCF1542D95BCEAD0E520 /* Pods-AMGSoundManager-AMGSoundManager-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AMGSoundManager-AMGSoundManager/Pods-AMGSoundManager-AMGSoundManager-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6FACF26D0C0C8046CFC79CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51B14DC1B509A0FD7568BC6 /* Pods-Tests-AMGSoundManager-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94AC33EA248FBD495894FBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAEAB8A916B295770D10C5C /* Pods-AMGSoundManager.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7364748A798741B93B646D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 428D709EF5B7BA3CAB473561 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC13B427BAA87E01EF8250F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A42521D9C63C92998CAE409 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BE9DBC69CA2E7A281C1D47CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E38DCF1542D95BCEAD0E520 /* Pods-AMGSoundManager-AMGSoundManager-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AMGSoundManager-AMGSoundManager/Pods-AMGSoundManager-AMGSoundManager-prefix.pch";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F683ED09F584EC0808D48A01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51B14DC1B509A0FD7568BC6 /* Pods-Tests-AMGSoundManager-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-AMGSoundManager/Pods-Tests-AMGSoundManager-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FCE97433607B21CA39C6B737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C070C23B708DCF4A1F87DC45 /* Pods-AMGSoundManager.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30FC98CE4157A8FA3366BD0F /* Build configuration list for PBXNativeTarget "Pods-Tests-AMGSoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F683ED09F584EC0808D48A01 /* Debug */,
+				6FACF26D0C0C8046CFC79CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		370DDF9CA3258DDC9089BA6D /* Build configuration list for PBXNativeTarget "AMGSoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F0A2C1ABCABEF63F6217E1 /* Debug */,
+				31A1631EA856C4434C856035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379F315233945E030C0DB65B /* Build configuration list for PBXNativeTarget "Pods-AMGSoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AC33EA248FBD495894FBEF /* Debug */,
+				FCE97433607B21CA39C6B737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4FBD991301D26103D8F251 /* Build configuration list for PBXNativeTarget "Pods-AMGSoundManager-AMGSoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C57066C4E4C531A95896C4E /* Debug */,
+				BE9DBC69CA2E7A281C1D47CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D94F7A0AD0B13E091E1391F9 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC13B427BAA87E01EF8250F6 /* Debug */,
+				A7364748A798741B93B646D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF799E59613C4605BE33EB04 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD755DA3AA22E80150B8708 /* Debug */,
+				139D603014BF61B47389D9C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E684EF8AFF7128FB5260660 /* Project object */;
+}
